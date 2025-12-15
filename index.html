@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medegor Cashew - Sensasi Saus Mede</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#D4AF37',
+                        'brand-dark': '#1A1A1A',
+                        'brand-brown': '#5D4037',
+                        'brand-cream': '#F5F5DC',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Poppins"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Smooth Scroll */
+        html { scroll-behavior: smooth; }
+        
+        /* Animasi Hover pada Kartu Menu */
+        .menu-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .menu-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        
+        /* Hero Background Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(batagor\ mede.png);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-brand-cream">
+
+    <nav class="bg-brand-dark text-white fixed w-full z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-brand-gold">
+                <i class="fas fa-crown mr-2"></i>Medegor
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-brand-gold transition">Beranda</a>
+                <a href="#about" class="hover:text-brand-gold transition">Keunggulan</a>
+                <a href="#menu" class="hover:text-brand-gold transition">Menu</a>
+                <a href="#contact" class="hover:text-brand-gold transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-brand-gold text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-6">
+        <div class="max-w-3xl animate-fade-in-up">
+            <h2 class="text-brand-gold font-bold text-xl md:text-2xl mb-2 tracking-widest uppercase">The Next Level of Batagor</h2>
+            <h1 class="text-white font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Batagor dengan <br> <span class="text-brand-gold">Saus Kacang Mede</span>
+            </h1>
+            <p class="text-gray-200 text-lg mb-8 font-light">
+                Rasakan sensasi gurih, creamy, dan mewah yang belum pernah Anda temukan di batagor biasa. Dibuat dari ikan tenggiri pilihan dan kacang mede premium.
+            </p>
+            <a href="#menu" class="bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brand-gold transition shadow-lg transform hover:scale-105 inline-block">
+                Pesan Sekarang <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif font-bold text-brand-dark mb-4">Kenapa Saus Mede?</h2>
+            <div class="w-24 h-1 bg-brand-gold mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-gold text-5xl mb-4"><i class="fas fa-seedling"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Lebih Creamy</h3>
+                    <p class="text-gray-600">Kacang mede memiliki kandungan lemak alami yang membuat tekstur saus jauh lebih lembut dan kental dibanding kacang tanah.</p>
+                </div>
+                <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-gold text-5xl mb-4"><i class="fas fa-award"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Rasa Premium</h3>
+                    <p class="text-gray-600">Aroma *nutty* yang khas dan rasa gurih yang elegan (buttery) memberikan pengalaman kuliner kelas atas.</p>
+                </div>
+                <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-gold text-5xl mb-4"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Lebih Sehat</h3>
+                    <p class="text-gray-600">Kacang mede kaya akan antioksidan dan lemak sehat yang baik untuk jantung, tanpa rasa "langu" kacang biasa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-brand-cream">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-brand-dark mb-4">Menu Favorit</h2>
+                <p class="text-gray-600">Pilih paket batagor ikan tenggiri asli dengan siraman saus mede spesial.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg menu-card group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="foto royal single.png" alt="Paket Royal Single" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-brand-gold text-white px-3 py-1 rounded-full text-sm font-bold">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Paket Royal Single</h3>
+                        <p class="text-gray-500 text-sm mb-4">1 Porsi Batagor 5 pcs + Saus Mede Original.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-brand-brown">Rp 25.000</span>
+                            <button onclick="orderWhatsApp('Paket Royal Single')" class="bg-brand-dark text-white px-4 py-2 rounded-lg hover:bg-brand-gold transition">
+                                <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg menu-card group border-2 border-brand-gold">
+                    <div class="h-64 overflow-hidden">
+                        <img src="foto paket sultan.png" alt="Paket Sultan (Jumbo)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Paket Sultan (Jumbo)</h3>
+                        <p class="text-gray-500 text-sm mb-4">Porsi Besar 12 pcs Batagor + Extra Saus Mede Pedas/Original.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-brand-brown">Rp 50.000</span>
+                            <button onclick="orderWhatsApp('Paket Sultan Jumbo')" class="bg-brand-dark text-white px-4 py-2 rounded-lg hover:bg-brand-gold transition">
+                                <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg menu-card group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="oleh oleh.png" alt="Oleh-Oleh Keluarga" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Oleh-Oleh Keluarga</h3>
+                        <p class="text-gray-500 text-sm mb-4">Isi 20 Pcs Batagor + Botol Saus Mede.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-brand-brown">Rp 80.000</span>
+                            <button onclick="orderWhatsApp('Frozen Pack')" class="bg-brand-dark text-white px-4 py-2 rounded-lg hover:bg-brand-gold transition">
+                                <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-brown text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <i class="fas fa-quote-left text-4xl text-brand-gold mb-6"></i>
+            <h3 class="text-2xl md:text-3xl font-serif italic mb-6">
+                "Awalnya ragu rasanya akan aneh, tapi ternyata saus medenya bikin nagih banget! Lebih gurih dan nggak bikin batuk."
+            </h3>
+            <p class="font-bold text-brand-gold">— Sari, Pecinta Kuliner Bandung</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-brand-dark text-gray-400 py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-2xl font-serif font-bold text-white mb-4">Medegor</h2>
+                <p class="mb-4">Meningkatkan standar jajanan tradisional Indonesia dengan sentuhan bahan premium. Rasakan kemewahan dalam setiap gigitan.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-brand-gold"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-brand-gold"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-brand-gold"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Lokasi</h4>
+                <p>Jl. Cikutra Baru XI No.33<br>Bandung, Jawa Barat<br>Indonesia</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Jam Operasional</h4>
+                <p>Senin - Jumat: 10.00 - 21.00<br>Sabtu - Minggu: 09.00 - 22.00</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+            <p>&copy; 2025 Medegor Saus Mede. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function orderWhatsApp(menuItem) {
+            // GANTI NOMOR INI DENGAN NOMOR WA ANDA (Format: 628xxx)
+            const phoneNumber = "62895344447657"; 
+            
+            const message = `Halo Admin Medegor, saya ingin memesan: ${menuItem}. Apakah masih tersedia?`;
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
